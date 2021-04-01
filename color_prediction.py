@@ -6,3 +6,4 @@ data_analysis.read_spectral_data(data_location, "new_spectrodetail.csv")
 print("here")
 
 print("check")
+print("version2")
