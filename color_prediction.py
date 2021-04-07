@@ -1,19 +1,6 @@
-<<<<<<< HEAD
 import data_analysis
-data_location = "./data"
-
-# data_analysis.test()
-data_analysis.read_spectral_data(data_location, "new_spectrodetail.csv")
-print("here")
-
-print("check")
-print("version2")
-=======
-import pandas
-
-# dataframe = pandas.read_csv()
-print("hello world")
-# pandas.read_csv("./")~
-
-print("new version")
->>>>>>> 3d44265d0adb85a8b376d908505d4a32d149d255
+data_location = "./data_project"
+five_raw_data_names = ["log_spectrodetail.csv", "log_spectrok_pkpaper.csv", "mst_ink.csv", "mst_paper.csv", "udt_imxbom.csv"]
+# data_analysis.data_integration(data_location, "new_spectrodetail.csv", "new_spectrok_inkmixsample.csv", "new_udt_inkmixbarcode.csv")
+data_analysis.data_integration(data_location, five_raw_data_names)
+data_analysis.data_analysis(data_location, "20210302_add_paper.csv", "analysis_results.csv")
